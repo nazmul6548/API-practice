@@ -32,25 +32,25 @@
 //     }
 // }
 
-function myFunc() {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(res => res.json())
-    .then(data => amaardesh(data))
+// function myFunc() {
+//     fetch('https://jsonplaceholder.typicode.com/posts')
+//     .then(res => res.json())
+//     .then(data => amaardesh(data))
 
-}
-function amaardesh(data) {
-    const connect = document.getElementById('major')
-    for (const dat of data) {
-        // dat.style.backgroundColor ="red";
-        console.log(dat);
-        const div = document.createElement('div');
-        div.classList.add('color');
-        div.innerHTML=`
-        <h4> data: ${dat.title}</h4>
-        <h5> bodys: ${dat.body}</h5>
-        <h6> id: ${dat.id}
-        `
-        connect.appendChild(div)
-    }
-}
-myFunc()
+// }
+// function amaardesh(data) {
+//     const connect = document.getElementById('major')
+//     for (const dat of data) {
+//         // dat.style.backgroundColor ="red";
+//         console.log(dat);
+//         const div = document.createElement('div');
+//         div.classList.add('color');
+//         div.innerHTML=`
+//         <h4> data: ${dat.title}</h4>
+//         <h5> bodys: ${dat.body}</h5>
+//         <h6> id: ${dat.id}
+//         `
+//         connect.appendChild(div)
+//     }
+// }
+// myFunc()
